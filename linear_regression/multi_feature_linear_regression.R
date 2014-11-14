@@ -7,7 +7,7 @@ linear_regression <- function(){
 	y <- data[, 3]
 	
 
-	x <- featureNormalize(x)
+	#x <- featureNormalize(x)
 	x <- as.matrix(cbind(rep(1, nrow(x)), x))
 	theta <- rep(0, ncol(x))
 
@@ -16,9 +16,10 @@ linear_regression <- function(){
 
 	print("Make a prediction")
 	#Normalize the features
-	feature_1 <- (1650 - mu[1]) / sigma[1]
-	feature_2 <- (3 - mu[2]) / sigma[2]
-	predict = c(1, feature_1, feature_2)
+	#feature_1 <- (1650 - mu[1]) / sigma[1]
+	#feature_2 <- (3 - mu[2]) / sigma[2]
+	#predict = c(1, feature_1, feature_2)
+	predict = c(1, 1650, 3)
 	cat("1650m^2, 3 bedrooms = ", as.numeric(predict %*% theta), "\n")
 }
 
