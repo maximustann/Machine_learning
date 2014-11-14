@@ -1,5 +1,4 @@
 gradient_descent <- function(x, y, theta){
-
 	m <- length(y)
 	iterations <- 1500
 	learning_rate <- 0.01
