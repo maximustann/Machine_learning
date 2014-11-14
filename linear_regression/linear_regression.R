@@ -11,6 +11,6 @@ linear_regression <- function(){
 	cost <- costFunction(x, y, theta)
 	plot(x[, 2], y, col = "red", pch = 4)
 	theta <- gradient_descent(x, y, theta)
-	abline(theta[1], theta[2], col = "blue", lwd = 2)
+	abline(theta[1], theta[2], col = "blue", lwd = 4)
 }
 
